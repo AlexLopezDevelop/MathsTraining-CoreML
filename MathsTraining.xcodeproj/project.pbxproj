@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACC0E6F321AF3CF9001D4698 /* MnistModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ACC0E6F221AF3CF9001D4698 /* MnistModel.mlmodel */; };
+		ACC0E6F521AF4DD9001D4698 /* DrawingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0E6F421AF4DD9001D4698 /* DrawingImageView.swift */; };
+		ACC0E6FB21B002E3001D4698 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0E6FA21B002E3001D4698 /* Question.swift */; };
+		ACC0E6FD21B00449001D4698 /* QuestionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0E6FC21B00449001D4698 /* QuestionsFactory.swift */; };
 		ACEB906321AEFB9900E03AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB906221AEFB9900E03AFA /* AppDelegate.swift */; };
 		ACEB906521AEFB9900E03AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEB906421AEFB9900E03AFA /* ViewController.swift */; };
 		ACEB906821AEFB9900E03AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEB906621AEFB9900E03AFA /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ACC0E6F221AF3CF9001D4698 /* MnistModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MnistModel.mlmodel; sourceTree = "<group>"; };
+		ACC0E6F421AF4DD9001D4698 /* DrawingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingImageView.swift; sourceTree = "<group>"; };
+		ACC0E6FA21B002E3001D4698 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		ACC0E6FC21B00449001D4698 /* QuestionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsFactory.swift; sourceTree = "<group>"; };
 		ACEB905F21AEFB9900E03AFA /* MathsTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathsTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEB906221AEFB9900E03AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACEB906421AEFB9900E03AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACC0E6F621AF4E0C001D4698 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0E6FA21B002E3001D4698 /* Question.swift */,
+				ACC0E6FC21B00449001D4698 /* QuestionsFactory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACC0E6F721AF4E15001D4698 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB906221AEFB9900E03AFA /* AppDelegate.swift */,
+				ACEB906421AEFB9900E03AFA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACC0E6F821AF4E1E001D4698 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB906921AEFB9A00E03AFA /* Assets.xcassets */,
+				ACEB906E21AEFB9A00E03AFA /* Info.plist */,
+				ACC0E6F221AF3CF9001D4698 /* MnistModel.mlmodel */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACC0E6F921AF4E75001D4698 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0E6F421AF4DD9001D4698 /* DrawingImageView.swift */,
+				ACEB906621AEFB9900E03AFA /* Main.storyboard */,
+				ACEB906B21AEFB9A00E03AFA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		ACEB905621AEFB9800E03AFA = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +100,10 @@
 		ACEB906121AEFB9900E03AFA /* MathsTraining */ = {
 			isa = PBXGroup;
 			children = (
-				ACEB906221AEFB9900E03AFA /* AppDelegate.swift */,
-				ACEB906421AEFB9900E03AFA /* ViewController.swift */,
-				ACEB906621AEFB9900E03AFA /* Main.storyboard */,
-				ACEB906921AEFB9A00E03AFA /* Assets.xcassets */,
-				ACEB906B21AEFB9A00E03AFA /* LaunchScreen.storyboard */,
-				ACEB906E21AEFB9A00E03AFA /* Info.plist */,
+				ACC0E6F921AF4E75001D4698 /* View */,
+				ACC0E6F721AF4E15001D4698 /* Controller */,
+				ACC0E6F621AF4E0C001D4698 /* Model */,
+				ACC0E6F821AF4E1E001D4698 /* Supporting Files */,
 			);
 			path = MathsTraining;
 			sourceTree = "<group>";
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC0E6FB21B002E3001D4698 /* Question.swift in Sources */,
 				ACEB906521AEFB9900E03AFA /* ViewController.swift in Sources */,
+				ACC0E6FD21B00449001D4698 /* QuestionsFactory.swift in Sources */,
 				ACEB906321AEFB9900E03AFA /* AppDelegate.swift in Sources */,
+				ACC0E6F321AF3CF9001D4698 /* MnistModel.mlmodel in Sources */,
+				ACC0E6F521AF4DD9001D4698 /* DrawingImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
-				INFOPLIST_FILE = MathsTraining/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MathsTraining/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
-				INFOPLIST_FILE = MathsTraining/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MathsTraining/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
